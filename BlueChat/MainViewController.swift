@@ -49,15 +49,14 @@ class MainViewController: UICollectionViewController {
     
     func assignbackground(){
         let background = UIImage(named: "background")
-        
         var imageView : UIImageView!
         imageView = UIImageView(frame: view.bounds)
         imageView.contentMode =  UIViewContentMode.scaleAspectFill
         imageView.clipsToBounds = true
         imageView.image = background
         imageView.center = view.center
-        collectionView!.addSubview(imageView)
-        self.collectionView!.sendSubview(toBack: imageView)
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
     }
     
     @objc func rightButtonAction(sender: UIBarButtonItem) {

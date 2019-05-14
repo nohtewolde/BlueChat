@@ -25,5 +25,16 @@ class ChatCell: UITableViewCell {
         self.sentMessage.layer.cornerRadius = 10
         
     }
-
+    
+    let profileImage : UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
+//    func setupViews(){
+//        addSubview(profileImage)
+//        addConstraints(<#T##constraints: [NSLayoutConstraint]##[NSLayoutConstraint]#>)
+//        
+//    }
 }
