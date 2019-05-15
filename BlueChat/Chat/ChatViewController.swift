@@ -45,7 +45,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        assignbackground()
         tableView.estimatedRowHeight = 68.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -60,6 +60,20 @@ class ChatViewController: UIViewController {
         sendButton.setTitle("_chat_send_button".localized, for: .normal)
     }
     
+    
+    func assignbackground(){
+        let background = UIImage(named: "background")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+    }
+    
+    
     func setDeviceValues() {
         
         let deviceData = deviceAttributes.components(separatedBy: "|")
@@ -67,7 +81,7 @@ class ChatViewController: UIViewController {
         if (deviceData.count > 2) {
             
             self.navigationItem.title = deviceData[0]
-            tableView.backgroundColor = Constants.colors[Int(deviceData[2])!]
+//            tableView.backgroundColor = Constants.colors[Int(deviceData[2])!]
         }
         
             
@@ -273,9 +287,8 @@ extension ChatViewController : CBPeripheralManagerDelegate {
             for request in requests
             {
                 if let value = request.value {
-                    
-                    let messageText = String(data: value, encoding: String.Encoding.utf8) as String!
-                    appendMessageToChat(message: Message(text: messageText!, isSent: false))
+                    let messageText = String(data: value, encoding: String.Encoding.utf8) as! String
+                    appendMessageToChat(message: Message(text: messageText, isSent: false))
                 }
                 self.peripheralManager.respond(to: request, withResult: .success)
             }
@@ -318,6 +331,7 @@ extension ChatViewController: UITableViewDelegate,UITableViewDataSource {
             cell.sentMessage.isHidden = false
             cell.sentMessage.text = message.text
             cell.sentMessage.sizeToFit()
+            cell.setupViews(isSent: message.isSent)
         }
         else {
             
@@ -325,6 +339,7 @@ extension ChatViewController: UITableViewDelegate,UITableViewDataSource {
             cell.receivedMessage.isHidden = false
             cell.receivedMessage.text = message.text
             cell.receivedMessage.sizeToFit()
+            cell.setupViews(isSent: message.isSent)
         }
         
         return cell

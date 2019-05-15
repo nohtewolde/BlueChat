@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23505B2FDAAEFFA33DD9B9A3 /* Pods_BlueChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154E33C6D73729939F564887 /* Pods_BlueChatUITests.framework */; };
+		4D2ABE6A766EDEA026710D8E /* Pods_BlueChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2537498093E789913B7AFB /* Pods_BlueChat.framework */; };
 		4E08FF771F1395BC00778FE7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E08FF711F1395BC00778FE7 /* RegisterViewController.swift */; };
 		4E08FF841F13A0F500778FE7 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E08FF7E1F13A0F500778FE7 /* AvatarPickerViewController.swift */; };
 		4E08FF871F13AFF300778FE7 /* AvatarPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E08FF861F13AFF300778FE7 /* AvatarPickerCell.swift */; };
@@ -33,6 +35,8 @@
 		4EC2D1251F0D0E5200E51020 /* whoisthereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2D1241F0D0E5200E51020 /* whoisthereUITests.swift */; };
 		4EC2D1341F0D0FB500E51020 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC2D1331F0D0FB500E51020 /* CoreBluetooth.framework */; };
 		4EC2D1361F0E53BA00E51020 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2D1351F0E53BA00E51020 /* Device.swift */; };
+		6777F156ECE266BFB552F6A1 /* Pods_BlueChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C884E11D31EE9F66B1E3A6 /* Pods_BlueChatTests.framework */; };
+		6D06C51D228B5B4F007311E9 /* addConstraintsWithFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D06C51C228B5B4F007311E9 /* addConstraintsWithFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153B80DBD43A36D1D10CCBA6 /* Pods-BlueChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-BlueChatUITests/Pods-BlueChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		154E33C6D73729939F564887 /* Pods_BlueChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C006BF3FE76149E7BB372F /* Pods-BlueChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueChat.release.xcconfig"; path = "Target Support Files/Pods-BlueChat/Pods-BlueChat.release.xcconfig"; sourceTree = "<group>"; };
+		3C9EF3AB2D0BC5162328D2B1 /* Pods-BlueChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueChatTests.release.xcconfig"; path = "Target Support Files/Pods-BlueChatTests/Pods-BlueChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		4E08FF711F1395BC00778FE7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4E08FF7E1F13A0F500778FE7 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		4E08FF861F13AFF300778FE7 /* AvatarPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarPickerCell.swift; sourceTree = "<group>"; };
@@ -85,6 +93,12 @@
 		4EC2D1261F0D0E5200E51020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EC2D1331F0D0FB500E51020 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		4EC2D1351F0E53BA00E51020 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		6D06C51C228B5B4F007311E9 /* addConstraintsWithFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addConstraintsWithFormat.swift; sourceTree = "<group>"; };
+		7C2537498093E789913B7AFB /* Pods_BlueChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C884E11D31EE9F66B1E3A6 /* Pods_BlueChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0E4E7952E2B711BC89B5CE /* Pods-BlueChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueChatUITests.release.xcconfig"; path = "Target Support Files/Pods-BlueChatUITests/Pods-BlueChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB1F34AC5EFF7CBA156DF35C /* Pods-BlueChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueChat.debug.xcconfig"; path = "Target Support Files/Pods-BlueChat/Pods-BlueChat.debug.xcconfig"; sourceTree = "<group>"; };
+		F8DC4E5055C016CA3E7C14A5 /* Pods-BlueChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueChatTests.debug.xcconfig"; path = "Target Support Files/Pods-BlueChatTests/Pods-BlueChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EC2D1341F0D0FB500E51020 /* CoreBluetooth.framework in Frameworks */,
+				4D2ABE6A766EDEA026710D8E /* Pods_BlueChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6777F156ECE266BFB552F6A1 /* Pods_BlueChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23505B2FDAAEFFA33DD9B9A3 /* Pods_BlueChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +217,7 @@
 		4E7A06921F14F0A500888F8D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6D06C51C228B5B4F007311E9 /* addConstraintsWithFormat.swift */,
 				4E7A06931F14F0BA00888F8D /* StringExtension.swift */,
 			);
 			name = Extensions;
@@ -240,6 +258,7 @@
 				4EC2D1231F0D0E5200E51020 /* BlueChatUITests */,
 				4EC2D1021F0D0E5200E51020 /* Products */,
 				4EC2D1321F0D0FB500E51020 /* Frameworks */,
+				EDFCF5B6F0824AB2DE267FA1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,8 +310,25 @@
 			isa = PBXGroup;
 			children = (
 				4EC2D1331F0D0FB500E51020 /* CoreBluetooth.framework */,
+				7C2537498093E789913B7AFB /* Pods_BlueChat.framework */,
+				92C884E11D31EE9F66B1E3A6 /* Pods_BlueChatTests.framework */,
+				154E33C6D73729939F564887 /* Pods_BlueChatUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDFCF5B6F0824AB2DE267FA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB1F34AC5EFF7CBA156DF35C /* Pods-BlueChat.debug.xcconfig */,
+				23C006BF3FE76149E7BB372F /* Pods-BlueChat.release.xcconfig */,
+				F8DC4E5055C016CA3E7C14A5 /* Pods-BlueChatTests.debug.xcconfig */,
+				3C9EF3AB2D0BC5162328D2B1 /* Pods-BlueChatTests.release.xcconfig */,
+				153B80DBD43A36D1D10CCBA6 /* Pods-BlueChatUITests.debug.xcconfig */,
+				9E0E4E7952E2B711BC89B5CE /* Pods-BlueChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +338,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EC2D1291F0D0E5200E51020 /* Build configuration list for PBXNativeTarget "BlueChat" */;
 			buildPhases = (
+				90E2217908F74389586B7663 /* [CP] Check Pods Manifest.lock */,
 				4EC2D0FD1F0D0E5200E51020 /* Sources */,
 				4EC2D0FE1F0D0E5200E51020 /* Frameworks */,
 				4EC2D0FF1F0D0E5200E51020 /* Resources */,
+				E798436EDA047B27B5FB44B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +357,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EC2D12C1F0D0E5200E51020 /* Build configuration list for PBXNativeTarget "BlueChatTests" */;
 			buildPhases = (
+				91CDCAC1A0273F89E2586B5A /* [CP] Check Pods Manifest.lock */,
 				4EC2D1111F0D0E5200E51020 /* Sources */,
 				4EC2D1121F0D0E5200E51020 /* Frameworks */,
 				4EC2D1131F0D0E5200E51020 /* Resources */,
@@ -337,6 +376,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EC2D12F1F0D0E5200E51020 /* Build configuration list for PBXNativeTarget "BlueChatUITests" */;
 			buildPhases = (
+				67838F60317B41AB19514EE7 /* [CP] Check Pods Manifest.lock */,
 				4EC2D11C1F0D0E5200E51020 /* Sources */,
 				4EC2D11D1F0D0E5200E51020 /* Frameworks */,
 				4EC2D11E1F0D0E5200E51020 /* Resources */,
@@ -434,6 +474,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67838F60317B41AB19514EE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90E2217908F74389586B7663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91CDCAC1A0273F89E2586B5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E798436EDA047B27B5FB44B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueChat/Pods-BlueChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/anim/anim.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/anim.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueChat/Pods-BlueChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4EC2D0FD1F0D0E5200E51020 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -450,6 +581,7 @@
 				4EC2D1051F0D0E5200E51020 /* AppDelegate.swift in Sources */,
 				4E08FF841F13A0F500778FE7 /* AvatarPickerViewController.swift in Sources */,
 				4E7A06941F14F0BA00888F8D /* StringExtension.swift in Sources */,
+				6D06C51D228B5B4F007311E9 /* addConstraintsWithFormat.swift in Sources */,
 				4E7A06971F160E0A00888F8D /* ChatViewController.swift in Sources */,
 				4E7A06A71F165C8B00888F8D /* PaddingLabel.swift in Sources */,
 				4E4640261F13C1B600C8F94C /* ColorPickerViewController.swift in Sources */,
@@ -607,6 +739,7 @@
 		};
 		4EC2D12A1F0D0E5200E51020 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1F34AC5EFF7CBA156DF35C /* Pods-BlueChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RQAE768Z9N;
@@ -620,6 +753,7 @@
 		};
 		4EC2D12B1F0D0E5200E51020 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C006BF3FE76149E7BB372F /* Pods-BlueChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RQAE768Z9N;
@@ -633,6 +767,7 @@
 		};
 		4EC2D12D1F0D0E5200E51020 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8DC4E5055C016CA3E7C14A5 /* Pods-BlueChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -647,6 +782,7 @@
 		};
 		4EC2D12E1F0D0E5200E51020 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9EF3AB2D0BC5162328D2B1 /* Pods-BlueChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -661,6 +797,7 @@
 		};
 		4EC2D1301F0D0E5200E51020 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153B80DBD43A36D1D10CCBA6 /* Pods-BlueChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = whoisthereUITests/Info.plist;
@@ -674,6 +811,7 @@
 		};
 		4EC2D1311F0D0E5200E51020 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0E4E7952E2B711BC89B5CE /* Pods-BlueChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = whoisthereUITests/Info.plist;

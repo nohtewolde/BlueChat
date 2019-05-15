@@ -133,7 +133,7 @@ extension MainViewController {
             
             cell.nameLabel?.text = advertisementData[0]
             cell.avatarImageView.image = UIImage(named: String(format: "%@%@", Constants.kAvatarImagePrefix, advertisementData[1]))
-            cell.backgroundColor = Constants.colors[Int(advertisementData[2])!]
+            cell.backgroundColor = Constants.colors[Int(advertisementData[2]) ?? 1]
         }
         else {
             cell.nameLabel?.text = device.name

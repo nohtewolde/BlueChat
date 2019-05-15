@@ -3,6 +3,7 @@
 
 
 import UIKit
+import anim
 
 class RegisterViewController: UIViewController, UITextFieldDelegate
 {
@@ -68,11 +69,34 @@ class RegisterViewController: UIViewController, UITextFieldDelegate
         userData.save()
     }
     
+    
+    
+    
     func setupUI() {
-        
         nextButton.layer.cornerRadius = 10
+        pickColorButton.layer.cornerRadius = 10
         nameTextField.delegate = self
         pickColorButton.setTitle("_register_pick_color".localized, for: .normal)
+        // moves box to 100,100 with default settings
+        anim {
+            self.pickColorButton.frame.origin = CGPoint(x:0, y:0)
+            self.nextButton.frame.origin = CGPoint(x:100, y:100)
+            self.avatarButton.frame.origin = CGPoint(x:100, y:100)
+            self.nameTextField.frame.origin = CGPoint(x:100, y:100)
+            }
+            // after that, waits 100 ms
+            .wait(0.5)
+            // moves box to 0,0 after waiting
+            .then {
+                self.avatarButton.frame.origin = CGPoint(x:123.5, y:140)
+                self.pickColorButton.frame.origin = CGPoint(x:56, y:399)
+                self.nextButton.frame.origin = CGPoint(x:56, y:473)
+                self.nameTextField.frame.origin = CGPoint(x:56, y:318)
+            }
+            // displays message after all animations are done
+            .callback {
+                print("Just finished moving 📦 around.")
+        }
     }
     
     func initData() {

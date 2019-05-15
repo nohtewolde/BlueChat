@@ -16,7 +16,6 @@ class ChatCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         self.backgroundColor = UIColor.clear
         
         self.receivedMessage.layer.backgroundColor = UIColor.white.cgColor
@@ -32,9 +31,18 @@ class ChatCell: UITableViewCell {
         return imageView
     }()
     
-//    func setupViews(){
-//        addSubview(profileImage)
-//        addConstraints(<#T##constraints: [NSLayoutConstraint]##[NSLayoutConstraint]#>)
-//        
-//    }
+    func setupViews(isSent: Bool){
+        addSubview(profileImage)
+        if isSent {
+            addConstraintsWithFormat(format: "H:[v0(40)]|", views: profileImage)
+            addConstraintsWithFormat(format: "V:[v0(40)]|", views: profileImage)
+            profileImage.image = UIImage(named: "avatar5")
+        }
+        else{
+            addConstraintsWithFormat(format: "H:|[v0(50)]", views: profileImage)
+            addConstraintsWithFormat(format: "V:[v0(50)]|", views: profileImage)
+            profileImage.image = UIImage(named: "avatar4")
+        }
+        
+    }
 }
