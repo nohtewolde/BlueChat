@@ -7,10 +7,10 @@
 "_alert_ok" = "OK";
 "_alert_choose_avatar"= "Please choose an avatar";
 "_alert_enter_name"= "Please enter your name";
-"_save" = "Save";
+"_save" = "Continue";
 "_next" = "Next";
 "_register_title" = "Register";
-"_register_pick_color" = "Pick a Color";
+"_register_pick_color" = "What's your Fav Color";
 "_profile_title" = "Profile";
 "_chat_send_button" = "Send";
 

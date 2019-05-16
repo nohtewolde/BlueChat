@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
-class AvatarPickerCell : UICollectionViewCell  {
+import Gemini
+class AvatarPickerCell : GeminiCell  {
     
     
     @IBOutlet weak var avatarImageView: UIImageView!
+    //    @IBOutlet weak var avatarImageView: UIImageView!
     
 }

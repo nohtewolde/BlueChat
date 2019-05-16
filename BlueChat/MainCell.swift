@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class MainCell : UICollectionViewCell  {
+import Gemini
+class MainCell : GeminiCell  {
     
     
     @IBOutlet weak var avatarImageView: UIImageView!

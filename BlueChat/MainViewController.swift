@@ -8,9 +8,11 @@
 
 import CoreBluetooth
 import UIKit
+import Gemini
 
-class MainViewController: UICollectionViewController {
+class MainViewController: UIViewController {
     
+    @IBOutlet weak var collectionView: GeminiCollectionView!
     let mainCellReuseIdentifier = "MainCell"
     let columnCount = 2
     let margin : CGFloat = 10
@@ -39,6 +41,11 @@ class MainViewController: UICollectionViewController {
         peripheralManager = CBPeripheralManager(delegate: self, queue: nil)
         
         scheduledTimerWithTimeInterval()
+        
+        collectionView.gemini
+            .rollRotationAnimation()
+            .degree(90)
+            .rollEffect(.rollDown)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +64,11 @@ class MainViewController: UICollectionViewController {
         imageView.center = view.center
         view.addSubview(imageView)
         self.view.sendSubview(toBack: imageView)
+    }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.collectionView.animateVisibleCells()
     }
     
     @objc func rightButtonAction(sender: UIBarButtonItem) {
@@ -114,14 +126,14 @@ class MainViewController: UICollectionViewController {
 }
 
 // MARK: - UICollectionViewDataSource protocol
-extension MainViewController {
+extension MainViewController: UICollectionViewDataSource {
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return visibleDevices.count
     }
     
     // make a cell for each cell index path
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: mainCellReuseIdentifier, for: indexPath as IndexPath) as! MainCell
         
@@ -141,30 +153,40 @@ extension MainViewController {
             cell.backgroundColor = UIColor.gray
         }
         
+        self.collectionView.animateCell(cell)
+        
         return cell
     }
 }
 
 // MARK: - UICollectionViewDelegate protocol
-extension MainViewController {
+extension MainViewController: UICollectionViewDelegate {
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let chatViewController = ChatViewController()
         chatViewController.deviceUUID = visibleDevices[indexPath.row].peripheral.identifier
         chatViewController.deviceAttributes = visibleDevices[indexPath.row].name
         self.navigationController?.pushViewController(chatViewController, animated: true)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath){
+        
+        if let cell = cell as? MainCell{
+            self.collectionView.animateCell(cell)
+        }
+    }
+    
 }
 
 extension MainViewController : UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        let marginsAndInsets = flowLayout.sectionInset.left + flowLayout.sectionInset.right + flowLayout.minimumInteritemSpacing * CGFloat(columnCount - 1)
-        let itemWidth = ((collectionView.bounds.size.width - marginsAndInsets) / CGFloat(columnCount)).rounded(.down)
-        return CGSize(width: itemWidth, height: itemWidth)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//        let marginsAndInsets = flowLayout.sectionInset.left + flowLayout.sectionInset.right + flowLayout.minimumInteritemSpacing * CGFloat(columnCount - 1)
+//        let itemWidth = ((collectionView.bounds.size.width - marginsAndInsets) / CGFloat(columnCount)).rounded(.down)
+//        return CGSize(width: itemWidth, height: itemWidth)
+//    }
 }
 /*
 extension MainViewController : CBPeripheralManagerDelegate {
